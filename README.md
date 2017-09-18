@@ -29,6 +29,7 @@ This section outlines the steps needed to get the integration installed.
 
 
 **Basic Authentication** 
+
 To set up Basic Authentication follow these steps:
 1. In xMatters, in the `Inbound from ThousandEyes` script, change the authentication method to Basic Authentication. 
 2. Create a user in xMatters and note the password. Grant the `Standard User`, `Web Service User` and `Full Access User` roles to this user. 
@@ -42,7 +43,7 @@ Next, in ThousandEyes:
 
 
 # Testing
-Take down a website or add a test for a bogus website on an Alert with the xMatters Webhook Notification. This will trigger the webhook which will run the script in `Inbound from ThousandEyes` and fire an event to notify the recipients defined on the `Send Alert` form. 
+Take down a website or add a test for a bogus website on an Alert and add the xMatters Webhook Notification. This will trigger the webhook which will run the script in `Inbound from ThousandEyes` and fire an event to notify the recipients defined on the `Send Alert` form. 
 
 
 # Troubleshooting
