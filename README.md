@@ -1,6 +1,14 @@
 
 # ThousandEyes
 
+---------
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</kbd>
+
+---------
+
 
 # Pre-Requisites
 * ThousandEyes [account](https://www.thousandeyes.com/signup)
