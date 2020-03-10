@@ -4,7 +4,9 @@
 ---------
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+<a href="https://support.xmatters.com/hc/en-us/community/topics">
+   <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</a>
 </kbd>
 
 ---------
@@ -15,7 +17,7 @@
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [ThousandEyes.zip](ThousandEyes.zip) - The Communications Plan containing the scripts and message templates
+* [ThousandEyes.zip](ThousandEyes.zip) - The Workflow containing the scripts and message templates
 
 # How it works
 Alerts in ThousandEyes are set up to fire a webhook when they fire. The webhook targets the xMatters Inbound Integration script, which transforms the payload into the correct format and creates the event. The recipients defined in the form layout are targeted for notification. Alternatively [subscriptions](http://help.xmatters.com/OnDemand/userguide/receivingalerts/subscriptions/howtousesubscriptions.htm) can be set up to notify the desired parties based on values in the alert. 
@@ -24,7 +26,7 @@ Alerts in ThousandEyes are set up to fire a webhook when they fire. The webhook 
 This section outlines the steps needed to get the integration installed. 
 
 ## xMatters set up
-1. Load in the [ThousandEyes.zip](ThousandEyes.zip) communications plan by clicking Import Plan from the Developer tab. 
+1. Load in the [ThousandEyes.zip](ThousandEyes.zip) workflow by clicking Import Plan from the Workflows section 
 2. On the ThousandEyes plan, click Edit > Integration Builder and expand the Inbound Integrations. 
 3. Click the `Inbound from ThousandEyes` link and scroll down to copy the Url. Save for later. 
 4. Click on the Forms tab and click Edit > Layout next to the Send Alert form. 
@@ -41,7 +43,7 @@ This section outlines the steps needed to get the integration installed.
 To set up Basic Authentication follow these steps:
 1. In xMatters, in the `Inbound from ThousandEyes` script, change the authentication method to Basic Authentication. 
 2. Create a user in xMatters and note the password. Grant the `Standard User`, `Web Service User` and `Full Access User` roles to this user. 
-3. On the Developer tab next to the ThousandEyes comm plan, click edit > Access Permissions. Add the user just created to the list. 
+3. On the Workflows section next to the ThousandEyes workflow, click edit > Access Permissions. Add the user just created to the list. 
 4. Click the Forms entry in the Edit drop down and in the `Send Alert` form, click Web Service Only > Sender Permissions and add the user again. 
 
 Next, in ThousandEyes:
